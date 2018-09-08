@@ -1,0 +1,14 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "Node.js & Express.js Application template.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HubCodes",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
