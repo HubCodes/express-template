@@ -4,11 +4,25 @@
   "description": "Node.js & Express.js Application template.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "sudo npm install -g mocha; sudo npm install -g eslint; eslint --init",
+    "test": "mocha"
   },
   "author": "HubCodes",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.0",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "node-mocks-http": "^1.7.0",
+    "should": "^13.2.3"
   }
 }
